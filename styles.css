@@ -47,10 +47,21 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     gap: 20px;
+    flex-direction: column-reverse;
+}
+
+.containerServicios  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column-reverse;
 }
 
 .text-content {
@@ -61,6 +72,8 @@ main {
 h1 {
     color: #1f4e79;
     margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 p {
@@ -103,6 +116,45 @@ footer {
     color: #3a89c9;
 }
 
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f4e79;
+}
+
+.nombre-usuario {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+}
+
+#header {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#header li {
+    margin: 0 15px;
+}
+
+#header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+#header a:hover {
+    background-color: #3a89c9;
+    border-radius: 5px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     #header {
@@ -118,7 +170,7 @@ footer {
     }
 
     img {
-        order: -1; /* Mueve la imagen arriba en pantallas pequeñas */
+        order: -1; 
         margin-bottom: 20px;
     }
 
@@ -147,4 +199,61 @@ footer {
     .footer-icons {
         gap: 15px;
     }
+}
+
+
+
+
+
+
+
+#descripcionServicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.descripcion {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.descripcion h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+.info-block {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los encabezados dentro de los bloques */
+.info-block h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo para los párrafos dentro de los bloques */
+.info-block p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
 }
