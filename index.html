@@ -16,6 +16,8 @@
             <li><a href="Servicios.html">Servicios</a></li>
             <li><a href="Contacto.html">Contacto</a></li>
         </ul>
+        <!-- Botón para activar el modo oscuro -->
+        <button id="darkModeToggle">Modo Oscuro</button>
     </header>
 
     <main>
@@ -48,7 +50,14 @@
 
     <!-- Cargar Font Awesome para los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript para el modo oscuro -->
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
+        });
+    </script>
 </body>
-
-
 </html>

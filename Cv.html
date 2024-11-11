@@ -16,12 +16,15 @@
             <li><a href="Servicios.html">Servicios</a></li>
             <li><a href="Contacto.html">Contacto</a></li>
         </ul>
+        <!-- Botón de modo oscuro -->
+        <button id="darkModeToggle">Modo Oscuro</button>
     </header>
 
-    <div id="resumenCv">
+    <div id="resumenCv" class="info-block">
         <h2>Resumen Profesional</h2>
         <p>Soy un desarrollador de software apasionado por la tecnología y con experiencia en múltiples lenguajes de programación, incluyendo JavaScript, Python, y C#. Me especializo en el desarrollo de aplicaciones web y móviles, y busco constantemente aprender nuevas tecnologías para mejorar mis habilidades.</p>
     </div>
+    
     <div id="cv">
         <a href="img/CV Lucas Gagliani.pdf" download="CV_Lucas_Gagliani.pdf">Descargar CV</a>
     </div>
@@ -43,5 +46,15 @@
         </div>
     </footer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript para el modo oscuro -->
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
+        });
+    </script>
 </body>
 </html>

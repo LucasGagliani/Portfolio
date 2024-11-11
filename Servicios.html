@@ -16,10 +16,11 @@
             <li><a href="Servicios.html">Servicios</a></li>
             <li><a href="Contacto.html">Contacto</a></li>
         </ul>
+        <!-- Botón de modo oscuro -->
+        <button id="darkModeToggle">Modo Oscuro</button>
     </header>
 
     <main class="containerServicios" style="flex-direction: column;">
-
         <div id="descripcionServicios" class="text-content">
             <div id="desarrolloWeb" class="descripcion">
                 <h2>Desarrollo Web</h2>
@@ -65,5 +66,15 @@
         </div>
     </footer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript para el modo oscuro -->
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
+        });
+    </script>
 </body>
 </html>

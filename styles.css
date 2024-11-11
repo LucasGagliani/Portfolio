@@ -1,3 +1,83 @@
+/* Estilos generales */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo base para el bloque de resumen */
+.info-block {
+    background-color: #f9f9f9; /* Fondo claro por defecto */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Estilos de modo oscuro */
+.dark-mode {
+    background-color: #121212; /* Fondo oscuro para todo el cuerpo */
+    color: #ffffff; /* Texto claro */
+}
+
+/* Fondo oscuro para el bloque de resumen en modo oscuro */
+.dark-mode .info-block {
+    background-color: #333333; /* Fondo gris oscuro */
+}
+
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+body.dark-mode a {
+    color: #ffffff;
+}
+
+body.dark-mode .text-content {
+    color: #dddddd;
+}
+
+/* Estilo base para el contenedor de contacto */
+.container-contacto {
+    background-color: #f9f9f9; /* Fondo claro por defecto */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Estilos de modo oscuro */
+.dark-mode {
+    background-color: #121212; /* Fondo oscuro para todo el cuerpo */
+    color: #ffffff; /* Texto claro */
+}
+
+/* Fondo oscuro para el contenedor de contacto en modo oscuro */
+.dark-mode .container-contacto {
+    background-color: #333333; /* Fondo gris oscuro */
+}
+
+/* Estilo base para los bloques de información */
+.info-block {
+    background-color: #f9f9f9; /* Fondo claro por defecto */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Estilos de modo oscuro */
+.dark-mode {
+    background-color: #121212; /* Fondo oscuro para todo el cuerpo */
+    color: #ffffff; /* Texto claro */
+}
+
+/* Fondo oscuro para los bloques de información en modo oscuro */
+.dark-mode .info-block {
+    background-color: #333333; /* Fondo gris oscuro */
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -200,12 +280,6 @@ img {
     }
 }
 
-
-
-
-
-
-
 #descripcionServicios {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -216,7 +290,7 @@ img {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    background-color: #f9f9f9;
+    
 }
 
 .descripcion h2 {
@@ -228,12 +302,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
 }
-
-
-
-
-
-
 
 .info-block {
     border: 1px solid #ddd;
@@ -247,14 +315,33 @@ img {
 .info-block h2 {
     font-size: 22px;
     margin-bottom: 10px;
-    color: #333;
+    
 }
 
 /* Estilo para los párrafos dentro de los bloques */
 .info-block p {
     font-size: 16px;
     line-height: 1.6;
-    color: #555;
+    
+}
+
+/* Estilo base para el bloque de descripción de servicios */
+.text-content {
+    background-color: #f9f9f9; /* Fondo claro por defecto */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Estilos de modo oscuro */
+.dark-mode {
+    background-color: #121212; /* Fondo oscuro para todo el cuerpo */
+    color: #ffffff; /* Texto claro */
+}
+
+/* Fondo oscuro para el bloque de servicios en modo oscuro */
+.dark-mode .text-content {
+    background-color: #333333; /* Fondo gris oscuro */
 }
 
 
@@ -262,7 +349,6 @@ img {
 #resumenCv {
     margin: 40px 20px;
     padding: 20px;
-    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
